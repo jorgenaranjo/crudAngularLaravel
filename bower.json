@@ -1,0 +1,24 @@
+{
+  "name": "CrudApiRest",
+  "description": "CrudApiRest",
+  "main": "",
+  "authors": [
+    "JorgeNaranjo90 <jorge020890@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.0-rc.1",
+    "lumx": "^0.3.96",
+    "angular-bootstrap": "^1.1.1"
+  }
+}
