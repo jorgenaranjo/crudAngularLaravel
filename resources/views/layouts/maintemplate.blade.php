@@ -55,7 +55,7 @@
             </div>
         </div>
     </nav>
-
+    @yield('content')
 
 
     <!-- Angular JS -->
@@ -64,6 +64,8 @@
 
     <!-- Angular ENES JS -->
     <script src="{{ asset('scripts/app.js') }}"></script>
+    <script src="{{ asset('scripts/controllers/Users/usersControllers.js') }}"></script>
+    <script src="{{ asset('scripts/services/Users/userFactory.js') }}"></script>
 
 
 
