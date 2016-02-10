@@ -7,6 +7,9 @@ angular.module('ENES')
         return{
             getAllUsers : function(){
                 return $http.get('api/users')
+            },
+            save : function($user){
+                return $http.post('api/users', $user)
             }
         }
     });

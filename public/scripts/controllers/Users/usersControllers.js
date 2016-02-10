@@ -10,5 +10,15 @@ angular.module('ENES')
         })
         .error(function(error){
                 console.log(error);
-        })
+        });
+
+        /*$scope.save = function($user){
+            userFactory.save($user)
+            .success(function(data){
+                console.log(data);
+            })
+            .error(function(error){
+                console.log(error);
+            })
+        }*/
     });

@@ -36,7 +36,10 @@ Route::group(['middleware' => 'web'], function () {
 });
 
 // Routes view
-
+Route::group([], function () {
+    Route::resource('users', 'UserController',
+        ['only' => ['create', 'edit']]);
+});
 
 // Routes JSON
 
@@ -45,6 +48,6 @@ Route::group(['prefix' => 'api'], function () {
     // Routes of model users
     Route::get('users', 'UserController@getAllData');
     Route::resource('users', 'UserController',
-        ['only' => ['store', 'update', 'destroy', 'show']]);
+        ['only' => ['index', 'store', 'update', 'destroy', 'show']]);
 
 });
